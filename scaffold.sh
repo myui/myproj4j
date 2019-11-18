@@ -26,8 +26,8 @@ proj_title=`echo ${proj_name} | awk '{print toupper(substr($0,0,1))substr($0,2)}
 echo "artifact_name=${artifact_name}, proj_title=${proj_title}"
 echo
 
-find . -type f | xargs sed -i "" "s/xxx4j/${artifact_name}"
-find . -type f | xargs sed -i "" "s/Xxx4j/${proj_title}"
+find . -type f | xargs sed -i "" "s/xxx4j/${artifact_name}/"
+find . -type f | xargs sed -i "" "s/Xxx4j/${proj_title}/"
 
 echo "done!"
 
