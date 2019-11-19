@@ -29,10 +29,8 @@ echo
 find . -type f | xargs sed -i "" "s/xxx4j/${artifact_name}/"
 find . -type f | xargs sed -i "" "s/Xxx4j/${proj_title}/"
 
-mkdir -p src/main/java
-mkdir -p src/main/resources
-mkdir -p src/test/java
-mkdir -p src/test/resources
+mkdir -p src/{main,test}/{java,resources}
+touch src/{main,test}/{java,resources}/.gitkeep
 
 echo "done!"
 

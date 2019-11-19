@@ -217,6 +217,9 @@
 					<configuration>
 						<finalName>${project.artifactId}-${project.version}</finalName>
 						<outputDirectory>${main.basedir}/target</outputDirectory>
+						<excludes>
+							<exclude>**/.gitkeep</exclude>
+						</excludes>
 					</configuration>
 				</plugin>
 				<plugin>
